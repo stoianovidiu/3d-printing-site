@@ -1,10 +1,15 @@
-import { Button as MButton } from "@mui/material";
-import styles from "./Button.module.scss";
+import { Button as MButton } from "@mui/joy";
 
-const Button = () => {
+const Button = (props) => {
   return (
-    <MButton className={styles.test} variant="contained">
-      {children}
+    <MButton
+      sx={{
+        backgroundColor: { sm: "red", md: "blue", lg: "yellow", xl: "green" },
+        width: { sm: "100%", md: 200 },
+      }}
+      variant="solid"
+    >
+      {props.children}
     </MButton>
   );
 };

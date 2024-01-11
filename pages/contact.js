@@ -2,7 +2,7 @@
 import Button from "../components/Button/Button.jsx";
 
 const Contact = () => {
-    return <Button variant="contained">test</Button>
-}
+  return <Button>test</Button>;
+};
 
 export default Contact;

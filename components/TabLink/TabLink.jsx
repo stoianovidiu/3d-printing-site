@@ -1,17 +1,7 @@
-import cn from "classnames";
-import { Link } from "@mui/material";
-import styles from "./TabLink.module.scss";
+import { Link } from "@mui/joy";
 
 const TabLink = (props) => {
-  return (
-    <Link
-      className={cn(styles.tab, {
-        [styles.primary]: props.variant === "primary",
-        [styles.secondary]: props.variant === "secondary",
-      })}
-      {...props}
-    />
-  );
+  return <Link variant="solid" {...props} />;
 };
 
 export default TabLink;
