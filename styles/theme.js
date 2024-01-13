@@ -24,7 +24,11 @@ const theme = extendTheme({
         background: {
           body: THEME_COLORS.primary,
         },
-        text: { primary: "#b7b7b7" },
+        text: {
+          primary: THEME_COLORS.text,
+          secondary: THEME_COLORS.secondary,
+          tertiary: THEME_COLORS.primary,
+        },
       },
     },
     dark: {
@@ -45,10 +49,25 @@ const theme = extendTheme({
         background: {
           body: THEME_COLORS.secondary,
         },
+        text: {
+          primary: THEME_COLORS.text,
+          secondary: THEME_COLORS.primary,
+          tertiary: THEME_COLORS.secondary,
+        },
       },
     },
   },
   breakpoints: { values: { sm: 0, md: 640, lg: 1080, xl: 1440 } },
+  fontSize: {
+    xs: 14,
+    sm: 16,
+    md: 20,
+    lg: 24,
+    xl: 32,
+    xl2: 36,
+    xl3: 40,
+    xl4: 48,
+  },
 });
 
 export default theme;
