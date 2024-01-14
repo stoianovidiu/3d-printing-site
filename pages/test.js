@@ -1,11 +1,11 @@
 import Header from "../components/Header/Header";
-import TabLink from "../components/TabLink/TabLink";
+import Link from "../components/Link/Link";
 
 const Test = () => {
   return (
     <>
       <Header level="h1">Test Header</Header>
-      <TabLink variant="secondary">test</TabLink>
+      <Link variant="secondary">test</Link>
     </>
   );
 };

@@ -4,10 +4,11 @@ const Button = (props) => {
   return (
     <MButton
       sx={{
-        backgroundColor: { sm: "red", md: "blue", lg: "yellow", xl: "green" },
         width: { sm: "100%", md: 200 },
       }}
       variant="solid"
+      onClick={props.onClick}
+      {...props}
     >
       {props.children}
     </MButton>

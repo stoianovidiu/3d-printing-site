@@ -12,17 +12,12 @@ const theme = extendTheme({
           solidHoverBg: THEME_COLORS.hoverPrimary,
           solidActiveBg: THEME_COLORS.secondary,
           solidActiveColor: THEME_COLORS.primary,
-          solidBorder: THEME_COLORS.secondary,
 
           softBg: THEME_COLORS.secondary,
           softColor: THEME_COLORS.primary,
           softHoverBg: THEME_COLORS.hoverSecondary,
           softActiveBg: THEME_COLORS.primary,
           softActiveColor: THEME_COLORS.secondary,
-          softBorder: THEME_COLORS.secondary,
-        },
-        background: {
-          body: THEME_COLORS.primary,
         },
         text: {
           primary: THEME_COLORS.text,
@@ -45,9 +40,6 @@ const theme = extendTheme({
           softHoverBg: THEME_COLORS.hoverPrimary,
           softActiveBg: THEME_COLORS.primary,
           softActiveColor: THEME_COLORS.secondary,
-        },
-        background: {
-          body: THEME_COLORS.secondary,
         },
         text: {
           primary: THEME_COLORS.text,
