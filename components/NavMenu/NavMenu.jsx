@@ -2,16 +2,12 @@ import { Box, useColorScheme } from "@mui/joy";
 import Link from "../Link/Link";
 import { MENU_ITEMS } from "../../constants/menuItems";
 import { useRouter } from "next/router";
-import Button from "../Button/Button";
 import { THEME_COLORS } from "../../constants/colors";
+import ThemeSwitcher from "../ThemeSwitcher/ThemeSwitcher";
 
 const NavMenu = () => {
   const router = useRouter();
-  const { mode, setMode } = useColorScheme();
-
-  const toggleMode = () => {
-    setMode(mode === "light" ? "dark" : "light");
-  };
+  const { mode } = useColorScheme();
 
   return (
     <nav>
@@ -23,10 +19,10 @@ const NavMenu = () => {
           mode === "light" ? THEME_COLORS.secondary : THEME_COLORS.primary
         }`}
       >
-        <Box>Logo</Box>
-        <Button onClick={toggleMode} variant="soft">
-          {`current - ${mode}`}
-        </Button>
+        <Box display="flex" gap={4}>
+          <Box>Logo</Box>
+          <ThemeSwitcher />
+        </Box>
         <Box display="flex">
           {MENU_ITEMS.map((item) => (
             <Link

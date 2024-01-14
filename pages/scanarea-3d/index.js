@@ -1,7 +1,7 @@
-import { Box } from "@mui/joy";
+import { Typography } from "@mui/joy";
 
 const Scanarea = () => {
-  return <Box>Scanarea 3D</Box>;
+  return <Typography>Scanarea 3D</Typography>;
 };
 
 export default Scanarea;

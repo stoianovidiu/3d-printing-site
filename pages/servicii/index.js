@@ -1,7 +1,7 @@
-import { Box } from "@mui/joy";
+import { Typography } from "@mui/joy";
 
 const Servicii = () => {
-  return <Box>Servicii</Box>;
+  return <Typography>Servicii</Typography>;
 };
 
 export default Servicii;
