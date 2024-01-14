@@ -19,7 +19,7 @@ const NavMenu = () => {
           mode === "light" ? THEME_COLORS.secondary : THEME_COLORS.primary
         }`}
       >
-        <Box display="flex" gap={4}>
+        <Box display="flex" alignItems="center" gap={4}>
           <Box>Logo</Box>
           <ThemeSwitcher />
         </Box>
