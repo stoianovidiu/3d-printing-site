@@ -1,7 +1,7 @@
 import Button from "../../components/Button/Button";
 
 const Contact = () => {
-  return <Button>test</Button>;
+  return <Button variant="soft">test</Button>;
 };
 
 export default Contact;
