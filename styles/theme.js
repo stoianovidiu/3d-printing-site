@@ -7,6 +7,8 @@ const theme = extendTheme({
     light: {
       palette: {
         primary: {
+          500: THEME_COLORS.secondary,
+
           solidBg: THEME_COLORS.primary,
           solidColor: THEME_COLORS.secondary,
           solidHoverBg: THEME_COLORS.hoverPrimary,
@@ -18,20 +20,25 @@ const theme = extendTheme({
           softHoverBg: THEME_COLORS.hoverSecondary,
           softActiveBg: THEME_COLORS.primary,
           softActiveColor: THEME_COLORS.secondary,
+
+          outlinedBorder: THEME_COLORS.secondary,
         },
         text: {
           primary: THEME_COLORS.text,
           secondary: THEME_COLORS.secondary,
           tertiary: THEME_COLORS.primary,
         },
+        divider: THEME_COLORS.secondary,
       },
     },
     dark: {
       palette: {
         primary: {
+          500: THEME_COLORS.primary,
+
           solidBg: THEME_COLORS.secondary,
           solidColor: THEME_COLORS.primary,
-          solidHoverBg: THEME_COLORS.hoverPlaceholder,
+          solidHoverBg: THEME_COLORS.hoverSecondary,
           solidActiveBg: THEME_COLORS.primary,
           solidActiveColor: THEME_COLORS.secondary,
 
@@ -40,12 +47,15 @@ const theme = extendTheme({
           softHoverBg: THEME_COLORS.hoverPrimary,
           softActiveBg: THEME_COLORS.primary,
           softActiveColor: THEME_COLORS.secondary,
+
+          outlinedBorder: THEME_COLORS.primary,
         },
         text: {
           primary: THEME_COLORS.text,
           secondary: THEME_COLORS.primary,
           tertiary: THEME_COLORS.secondary,
         },
+        divider: THEME_COLORS.primary,
       },
     },
   },
