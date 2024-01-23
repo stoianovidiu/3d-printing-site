@@ -4,13 +4,14 @@ import Paragraph from "../Paragraph/Paragraph";
 import Header from "../Header/Header";
 import theme from "../../styles/theme";
 
-const PricingCard = () => {
+const TextCard = () => {
   return (
     <Card
       variant="outlined"
       sx={{
-        minHeight: 280,
+        height: { sm: 280, md: 320, lg: 440, xl: 440 },
         borderRadius: theme.radius.xl2,
+        boxShadow: "0px 6px 10px rgba(0,0,0,0.5)",
       }}
     >
       <Header
@@ -56,4 +57,4 @@ const PricingCard = () => {
   );
 };
 
-export default PricingCard;
+export default TextCard;

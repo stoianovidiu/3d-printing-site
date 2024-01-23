@@ -1,26 +1,59 @@
-import { Typography } from "@mui/joy";
+import { Grid } from "@mui/joy";
+import Header from "../../components/Header/Header";
 import MainCard, { CardType } from "../../components/Card/MainCard";
 import projects from "../../public/utils/projects.json";
+import theme from "../../styles/theme";
+import { Divider } from "@mui/material";
+import { SPACING } from "../../constants/spacings";
+
+const templatePadding = SPACING;
 
 const Portofoliu = () => {
+  const itemsMixed = projects.map((item) => (
+    <Grid sm={12} md={6} lg={6} xl={4}>
+      <MainCard
+        cardType={CardType.Mixed}
+        title={item.title}
+        date={item.date}
+        image={item.coverImage}
+      />
+    </Grid>
+  ));
+
+  const itemsCover = projects.map((item) => (
+    <Grid sm={12} md={6} lg={6} xl={4}>
+      <MainCard cardType={CardType.Cover} image={item.coverImage} />
+    </Grid>
+  ));
+
   return (
-    <div>
-      <Typography>Portofoliu</Typography>
-      <MainCard
-        cardType={CardType.Overflow}
-        title={projects[0].title}
-        date={projects[0].date}
-        image={projects[0].coverImage}
+    <>
+      <Header level="h1" sx={{ pb: { sm: 4, md: 6 } }}>
+        Proiecte
+      </Header>
+      {/* <Divider
+        sx={{
+          color: theme.palette.text.secondary,
+        }}
+      /> */}
+      <Divider
+        sx={{
+          "--Divider-thickness": "2px",
+          borderColor: theme.palette.primary.solidHoverBg,
+        }}
       />
-      <MainCard
-        cardType={CardType.Overflow}
-        title={projects[1].title}
-        date={projects[1].date}
-        image={projects[1].coverImage}
-      />
-      <MainCard cardType={CardType.Pricing} />
-      <MainCard image={projects[0].coverImage} />
-    </div>
+      <Grid
+        container
+        spacing={3}
+        sx={{ flexGrow: 1 }}
+        py={{ sm: templatePadding.xl, md: templatePadding.xxl }}
+      >
+        {itemsMixed}
+        {itemsCover}
+      </Grid>
+
+      {/* <MainCard cardType={CardType.Pricing} /> */}
+    </>
   );
 };
 

@@ -1,29 +1,37 @@
 import * as React from "react";
-import Image from "next/image";
-import AspectRatio from "@mui/joy/AspectRatio";
-import { Card, CardContent, CardOverflow } from "@mui/joy";
+import { Box, Card, CardContent, CardOverflow } from "@mui/joy";
 import Paragraph from "../Paragraph/Paragraph";
 import Link from "../Link/Link";
 import theme from "../../styles/theme";
+import styles from "./MainCard.module.scss";
 
 const OverflowCard = ({ title, date, image }) => {
   return (
     <Card
       variant="outlined"
       sx={{
-        minHeight: 280,
+        height: { sm: 280, md: 400, lg: 456, xl: 576 },
         borderRadius: theme.radius.xl2,
       }}
     >
-      <CardOverflow>
-        <AspectRatio
-          ratio="16/9"
+      <CardOverflow
+        sx={{ padding: 0, maxHeight: { sm: 216, md: 320, lg: 360, xl: 480 } }}
+      >
+        <Box
           sx={{
-            borderRadius: `${theme.radius.xl2} ${theme.radius.xl2} 0 0`,
+            borderRadius: theme.radius.xl2,
+            overflow: "hidden",
+            display: "flex",
+            alignItems: "center",
           }}
         >
-          <Image alt={image.alt} src={image.src} layout="fill" loading="lazy" />
-        </AspectRatio>
+          <img
+            alt={image.alt}
+            src={image.src}
+            loading="lazy"
+            className={styles.image}
+          />
+        </Box>
       </CardOverflow>
       <CardContent sx={{ justifyContent: "flex-end" }}>
         <Link
@@ -32,9 +40,9 @@ const OverflowCard = ({ title, date, image }) => {
           href="#"
           sx={{ padding: 0, justifyContent: "flex-start" }}
         >
-          <Paragraph fontSize="lg">{title}</Paragraph>
+          <Paragraph>{title}</Paragraph>
         </Link>
-        <Paragraph fontSize="sm">{date}</Paragraph>
+        <Paragraph fontSize="xs">{date}</Paragraph>
       </CardContent>
     </Card>
   );
