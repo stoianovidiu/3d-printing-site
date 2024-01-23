@@ -9,8 +9,8 @@ import { SPACING } from "../../constants/spacings";
 const templatePadding = SPACING;
 
 const Portofoliu = () => {
-  const itemsMixed = projects.map((item) => (
-    <Grid sm={12} md={6} lg={6} xl={4}>
+  const itemsMixed = projects.map((item, index) => (
+    <Grid sm={12} md={6} lg={6} xl={4} key={index}>
       <MainCard
         cardType={CardType.Mixed}
         title={item.title}
@@ -20,9 +20,9 @@ const Portofoliu = () => {
     </Grid>
   ));
 
-  const itemsCover = projects.map((item) => (
-    <Grid sm={12} md={6} lg={6} xl={4}>
-      <MainCard cardType={CardType.Cover} image={item.coverImage} />
+  const itemsCover = projects.map((item, index) => (
+    <Grid sm={12} md={6} lg={6} xl={4} key={index}>
+      <MainCard cardType={CardType.Image} image={item.coverImage} />
     </Grid>
   ));
 
@@ -31,11 +31,6 @@ const Portofoliu = () => {
       <Header level="h1" sx={{ pb: { sm: 4, md: 6 } }}>
         Proiecte
       </Header>
-      {/* <Divider
-        sx={{
-          color: theme.palette.text.secondary,
-        }}
-      /> */}
       <Divider
         sx={{
           "--Divider-thickness": "2px",
@@ -51,8 +46,6 @@ const Portofoliu = () => {
         {itemsMixed}
         {itemsCover}
       </Grid>
-
-      {/* <MainCard cardType={CardType.Pricing} /> */}
     </>
   );
 };

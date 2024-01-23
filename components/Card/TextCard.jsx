@@ -4,7 +4,7 @@ import Paragraph from "../Paragraph/Paragraph";
 import Header from "../Header/Header";
 import theme from "../../styles/theme";
 
-const TextCard = () => {
+const TextCard = ({ title, subtitle, fileType }) => {
   return (
     <Card
       variant="outlined"
@@ -38,18 +38,18 @@ const TextCard = () => {
             textColor={theme.palette.text.secondary}
             sx={{ fontWeight: 700 }}
           >
-            Scanare + Releveu 2D
+            {title}
           </Paragraph>
         </ListItem>
         <ListItem>
-          <Paragraph fontSize="sm">pentru intabulari</Paragraph>
+          <Paragraph fontSize="sm">{subtitle}</Paragraph>
         </ListItem>
         <ListItem sx={{ mt: 2 }}>
           <Paragraph fontSize="sm">format</Paragraph>
         </ListItem>
         <ListItem>
           <Paragraph fontSize="lg" sx={{ fontWeight: 700 }}>
-            .DWG
+            {fileType}
           </Paragraph>
         </ListItem>
       </List>

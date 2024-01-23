@@ -14,7 +14,13 @@ const ImageCard = ({ image }) => {
       }}
     >
       <CardCover>
-        <Image alt={image.alt} src={image.src} layout="fill" loading="lazy" />
+        <Image
+          alt={image.alt}
+          src={image.src}
+          fill
+          sizes="100%"
+          loading="lazy"
+        />
       </CardCover>
     </Card>
   );
