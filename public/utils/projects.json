@@ -1,6 +1,6 @@
 [
   {
-    "id": 1,
+    "id": "Project_1",
     "title": "Restaurarea Castelului",
     "description": "Ana are mere",
     "date": "Aprilie 2023",
@@ -12,11 +12,23 @@
     ]
   },
   {
-    "id": 2,
+    "id": "Project_2",
     "title": "Biserica și mănăstirea franciscană din Vintu de Jos",
     "description": "Ana are mere",
     "date": "Aprilie 2023",
     "coverImage": {"src": "/assets/Mountain.png", "alt": "Mountain"},
+    "gallery": [
+      {"src": "/assets/Sydney.png", "alt": "Sydney"},
+      {"src": "/assets/Fjord.png", "alt": "Fjord"},
+      {"src": "/assets/Mountain.png", "alt": "Mountain"}
+    ]
+  },
+  {
+    "id": "Project_3",
+    "title": "Biserica și mănăstirea franciscană din Vintu de Jos",
+    "description": "Ana are mere",
+    "date": "Aprilie 2023",
+    "coverImage": {"src": "/assets/Fjord.png", "alt": "Fjord"},
     "gallery": [
       {"src": "/assets/Sydney.png", "alt": "Sydney"},
       {"src": "/assets/Fjord.png", "alt": "Fjord"},

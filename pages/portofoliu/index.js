@@ -9,20 +9,14 @@ import { SPACING } from "../../constants/spacings";
 const templatePadding = SPACING;
 
 const Portofoliu = () => {
-  const itemsMixed = projects.map((item, index) => (
-    <Grid sm={12} md={6} lg={6} xl={4} key={index}>
+  const itemsMixed = projects.map((item) => (
+    <Grid sm={12} md={6} xl={4} key={item.id}>
       <MainCard
         cardType={CardType.Mixed}
         title={item.title}
         date={item.date}
         image={item.coverImage}
       />
-    </Grid>
-  ));
-
-  const itemsCover = projects.map((item, index) => (
-    <Grid sm={12} md={6} lg={6} xl={4} key={index}>
-      <MainCard cardType={CardType.Image} image={item.coverImage} />
     </Grid>
   ));
 
@@ -44,7 +38,6 @@ const Portofoliu = () => {
         py={{ sm: templatePadding.xl, md: templatePadding.xxl }}
       >
         {itemsMixed}
-        {itemsCover}
       </Grid>
     </>
   );
