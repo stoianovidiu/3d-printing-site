@@ -19,7 +19,7 @@ const MenuItems = () => {
           href={item.path}
           fontSize="lg"
           py={2}
-          borderRadius={{ lg: 16 }}
+          borderRadius={{ lg: 0 }}
           variant={item.path === router.route ? "soft" : "solid"}
         >
           {item.label}

@@ -31,7 +31,7 @@ const Template = (props) => {
             display="flex"
             justifyContent="space-between"
             alignItems="center"
-            py={{ sm: 2, lg: 0.25 }}
+            py={{ sm: 2, lg: 0 }}
           >
             <Box display="flex" alignItems="center" gap={4}>
               <Logo />
@@ -46,6 +46,8 @@ const Template = (props) => {
             sx={{
               // mb: 2,
               "--Divider-thickness": "2px",
+              boxShadow: "0 0 0 100vmax var(--joy-palette-divider)",
+              clipPath: "inset(0px -100vmax)",
             }}
           />
         </nav>
