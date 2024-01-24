@@ -91,6 +91,7 @@ const Portofoliu = () => {
                 mx: { sm: "auto", md: 0 },
                 color: theme.palette.text.primary,
                 width: { sm: "fit-content" },
+                textAlign: { sm: "center" },
               }}
             >
               Toate
@@ -101,6 +102,7 @@ const Portofoliu = () => {
                 mx: { sm: "auto", md: 0 },
                 color: theme.palette.text.primary,
                 width: { sm: "fit-content" },
+                textAlign: { sm: "center" },
               }}
             >
               Locuinte individuale
@@ -111,6 +113,7 @@ const Portofoliu = () => {
                 mx: { sm: "auto", md: 0 },
                 color: theme.palette.text.primary,
                 width: { sm: "fit-content" },
+                textAlign: { sm: "center" },
               }}
             >
               Industriale
@@ -121,6 +124,7 @@ const Portofoliu = () => {
                 mx: { sm: "auto", md: 0 },
                 color: theme.palette.text.primary,
                 width: { sm: "fit-content" },
+                textAlign: { sm: "center" },
               }}
             >
               Fatade
