@@ -8,7 +8,7 @@ import ThemeSwitcher from "../ThemeSwitcher/ThemeSwitcher";
 import Logo from "../Logo/Logo";
 import { Divider } from "@mui/material";
 
-const templatePadding = SPACING.PAGE_TEMPLATE_PADDING;
+const templatePadding = SPACING;
 
 const Template = (props) => {
   const { mode } = useColorScheme();
@@ -49,7 +49,7 @@ const Template = (props) => {
             }}
           />
         </nav>
-        <Box flex={1} py={templatePadding.md}>
+        <Box flex={1} py={{ sm: templatePadding.lg, md: templatePadding.xl }}>
           {props.children}
         </Box>
         <Box>footer</Box>
