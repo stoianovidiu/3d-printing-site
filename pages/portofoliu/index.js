@@ -64,7 +64,7 @@ const Portofoliu = () => {
         >
           <TabList
             sx={{
-              flexDirection: { sm: "column", lg: "row" },
+              flexDirection: { sm: "column", md: "row" },
               pt: { sm: templatePadding.lg, md: templatePadding.xl },
               boxShadow: `inset 0 -1px ${theme.palette.text.primary}`,
               [`&& .${tabClasses.root}`]: {
@@ -88,7 +88,7 @@ const Portofoliu = () => {
             <Tab
               sx={{
                 px: 1,
-                mx: { sm: "auto", lg: 0 },
+                mx: { sm: "auto", md: 0 },
                 color: theme.palette.text.primary,
                 width: { sm: "fit-content" },
               }}
@@ -98,7 +98,7 @@ const Portofoliu = () => {
             <Tab
               sx={{
                 px: 1,
-                mx: { sm: "auto", lg: 0 },
+                mx: { sm: "auto", md: 0 },
                 color: theme.palette.text.primary,
                 width: { sm: "fit-content" },
               }}
@@ -108,7 +108,7 @@ const Portofoliu = () => {
             <Tab
               sx={{
                 px: 1,
-                mx: { sm: "auto", lg: 0 },
+                mx: { sm: "auto", md: 0 },
                 color: theme.palette.text.primary,
                 width: { sm: "fit-content" },
               }}
@@ -118,7 +118,7 @@ const Portofoliu = () => {
             <Tab
               sx={{
                 px: 1,
-                mx: { sm: "auto", lg: 0 },
+                mx: { sm: "auto", md: 0 },
                 color: theme.palette.text.primary,
                 width: { sm: "fit-content" },
               }}
