@@ -2,11 +2,13 @@ import * as React from "react";
 import { Box, Grid, Tab, Tabs, TabList, tabClasses, TabPanel } from "@mui/joy";
 import Header from "../../components/Header/Header";
 import MainCard, { CardType } from "../../components/Card/MainCard";
-import projects from "../../public/utils/projects.json";
+import projects from "../../utils/projects.json";
 import theme from "../../styles/theme";
 import { SPACING } from "../../constants/spacings";
+import { ROUTES } from "../../constants/routes";
+import { useRouter } from "next/router";
 
-const templatePadding = SPACING;
+const itemPadding = SPACING;
 
 const applyGridLayout = (list) => {
   const gridLayout = list.map((project) => (
@@ -16,6 +18,7 @@ const applyGridLayout = (list) => {
         title={project.title}
         date={project.date}
         image={project.coverImage}
+        href={`${ROUTES.portfolio}/${project.id}`}
       />
     </Grid>
   ));
@@ -29,6 +32,8 @@ const applyGridLayout = (list) => {
 
 const Portofoliu = () => {
   const [index, setIndex] = React.useState(0);
+  const router = useRouter();
+  console.log(router);
 
   const residenceProjects = projects.filter((project) =>
     project.category.includes("residence")
@@ -56,7 +61,7 @@ const Portofoliu = () => {
           <TabList
             sx={{
               flexDirection: { sm: "column", md: "row" },
-              pt: { sm: templatePadding.lg, md: templatePadding.xl },
+              pt: { sm: itemPadding.lg, md: itemPadding.xl },
               boxShadow: `inset 0 -1px ${theme.palette.text.primary}`,
               [`&& .${tabClasses.root}`]: {
                 flex: "initial",
@@ -121,7 +126,7 @@ const Portofoliu = () => {
               Fatade
             </Tab>
           </TabList>
-          <Box sx={{ pt: { sm: templatePadding.xl, md: templatePadding.xxl } }}>
+          <Box sx={{ pt: { sm: itemPadding.xl, md: itemPadding.xl2 } }}>
             <TabPanel value={0} sx={{ p: 0 }}>
               {applyGridLayout(projects)}
             </TabPanel>

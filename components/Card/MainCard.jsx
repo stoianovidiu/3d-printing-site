@@ -10,27 +10,53 @@ export const CardType = Object.freeze({
   Mixed: Symbol("mixed"),
 });
 
+export const ImageType = Object.freeze({
+  LargeGrid: Symbol("largeGrid"),
+  SmallGrid: Symbol("smallGrid"),
+});
+
 const MainCard = ({
   cardType = CardType.Image,
+  cardAnimation = true,
   title,
   date,
   image,
   subtitle,
   fileType,
+  imageType = ImageType.LargeGrid,
+  itemNumber,
+  href,
 }) => {
   return (
     <Box
-      sx={{
-        transition: "transform 0.15s ease-in-out",
-        "&:hover": { transform: "scale3d(1.03, 1.03, 1)" },
-      }}
+      sx={
+        cardAnimation
+          ? {
+              transition: "transform 0.15s ease-in-out",
+              "&:hover": { transform: "scale3d(1.03, 1.03, 1)" },
+            }
+          : {}
+      }
     >
-      {cardType === CardType.Image && <ImageCard image={image} />}
+      {cardType === CardType.Image && (
+        <ImageCard image={image} imageType={imageType} />
+      )}
       {cardType === CardType.Mixed && (
-        <MixedCard title={title} date={date} image={image} />
+        <MixedCard
+          title={title}
+          date={date}
+          image={image}
+          imageType={ImageType.LargeGrid}
+          href={href}
+        />
       )}
       {cardType === CardType.Text && (
-        <TextCard title={title} subtitle={subtitle} fileType={fileType} />
+        <TextCard
+          itemNumber={itemNumber}
+          title={title}
+          subtitle={subtitle}
+          fileType={fileType}
+        />
       )}
     </Box>
   );

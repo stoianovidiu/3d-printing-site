@@ -1,0 +1,68 @@
+{
+  "options": [
+    {
+      "id": "option-1",
+      "title": "Scanare laser 3D exterior",
+      "description": "Text despre ce inseamna scanarea 3D"
+    },
+    {
+      "id": "option-2",
+      "title": "Scanare laser 3D interior",
+      "description": "Filtrarea, eliminarea zgomotului digital, clasificarea norilor de puncte în funcție de criteriile legii"
+    },
+    {
+      "id": "option-3",
+      "title": "Releveu 2D",
+      "description": "Comparația construcției cu modelul 3D CAD din proiect (colorarea norului de puncte în funcție de volumul diferențelor)"
+    },
+    {
+      "id": "option-4",
+      "title": "Releveu 3D",
+      "description": "Filtrarea, eliminarea zgomotului digital, clasificarea norilor de puncte în funcție de criteriile legii"
+    },
+    {
+      "id": "option-5",
+      "title": "Print macheta 3D",
+      "description": "Comparația construcției cu modelul 3D CAD din proiect (colorarea norului de puncte în funcție de volumul diferențelor)"
+    }
+  ],
+
+  "gallery": [
+    {"id": "01", "src": "/assets/Sydney.png", "alt": "Sydney"},
+    {"id": "02", "src": "/assets/Fjord.png", "alt": "Fjord"},
+    {"id": "03", "src": "/assets/Mountain.png", "alt": "Mountain"}
+  ],
+
+  "pricing": [
+    {
+      "id": "price-1",
+      "title": "Scanare + Releveu 2D",
+      "subtitle": "pentru intabulari",
+      "fileType": ".DWG"
+    },
+    {
+      "id": "price-2",
+      "title": "Scanare + Releveu 3D",
+      "subtitle": "pentru intabulari",
+      "fileType": ".IFC"
+    },
+    {
+      "id": "price-3",
+      "title": "Scanare + Releveu 2D",
+      "subtitle": "planuri",
+      "fileType": ".DWG"
+    },
+    {
+      "id": "price-4",
+      "title": "Scanare + Releveu 2D",
+      "subtitle": "fatade",
+      "fileType": ".DWG"
+    },
+    {
+      "id": "price-5",
+      "title": "Scanare + Releveu 3D",
+      "subtitle": "planuri, sectiuni & fatade",
+      "fileType": ".DWG + .IFC"
+    }
+  ]
+}
