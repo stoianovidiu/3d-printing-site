@@ -1,14 +1,5 @@
 import * as React from "react";
-import {
-  Box,
-  Chip,
-  Grid,
-  Tab,
-  Tabs,
-  TabList,
-  tabClasses,
-  TabPanel,
-} from "@mui/joy";
+import { Box, Grid, Tab, Tabs, TabList, tabClasses, TabPanel } from "@mui/joy";
 import Header from "../../components/Header/Header";
 import MainCard, { CardType } from "../../components/Card/MainCard";
 import projects from "../../public/utils/projects.json";
