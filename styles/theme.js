@@ -22,6 +22,7 @@ const theme = extendTheme({
           softActiveColor: THEME_COLORS.secondary,
 
           outlinedBorder: THEME_COLORS.secondary,
+          shadow: THEME_COLORS.shadowBlack,
         },
         text: {
           primary: THEME_COLORS.text,
@@ -49,6 +50,7 @@ const theme = extendTheme({
           softActiveColor: THEME_COLORS.secondary,
 
           outlinedBorder: THEME_COLORS.primary,
+          shadow: THEME_COLORS.shadowWhite,
         },
         text: {
           primary: THEME_COLORS.text,
@@ -79,6 +81,9 @@ const theme = extendTheme({
     xl2: 24,
     xl3: 36,
     xl4: 40,
+  },
+  shadow: {
+    sm: "0px 6px 10px rgba(255, 255, 255, 0.3), 0px 6px 10px rgba(0, 0, 0, 0.5)",
   },
 });
 

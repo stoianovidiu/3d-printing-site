@@ -9,7 +9,8 @@
       {"src": "/assets/Sydney.png", "alt": "Sydney"},
       {"src": "/assets/Fjord.png", "alt": "Fjord"},
       {"src": "/assets/Mountain.png", "alt": "Mountain"}
-    ]
+    ],
+    "category": ["residence", "facade"]
   },
   {
     "id": "Project_2",
@@ -21,7 +22,8 @@
       {"src": "/assets/Sydney.png", "alt": "Sydney"},
       {"src": "/assets/Fjord.png", "alt": "Fjord"},
       {"src": "/assets/Mountain.png", "alt": "Mountain"}
-    ]
+    ],
+    "category": ["residence", "industrial"]
   },
   {
     "id": "Project_3",
@@ -33,6 +35,46 @@
       {"src": "/assets/Sydney.png", "alt": "Sydney"},
       {"src": "/assets/Fjord.png", "alt": "Fjord"},
       {"src": "/assets/Mountain.png", "alt": "Mountain"}
-    ]
+    ],
+    "category": ["industrial", "facade"]
+  },
+  {
+    "id": "Project_4",
+    "title": "Restaurarea Castelului",
+    "description": "Ana are mere",
+    "date": "Aprilie 2023",
+    "coverImage": {"src": "/assets/Sydney.png", "alt": "Sydney"},
+    "gallery": [
+      {"src": "/assets/Sydney.png", "alt": "Sydney"},
+      {"src": "/assets/Fjord.png", "alt": "Fjord"},
+      {"src": "/assets/Mountain.png", "alt": "Mountain"}
+    ],
+    "category": ["industrial", "facade"]
+  },
+  {
+    "id": "Project_5",
+    "title": "Biserica și mănăstirea franciscană din Vintu de Jos",
+    "description": "Ana are mere",
+    "date": "Aprilie 2023",
+    "coverImage": {"src": "/assets/Mountain.png", "alt": "Mountain"},
+    "gallery": [
+      {"src": "/assets/Sydney.png", "alt": "Sydney"},
+      {"src": "/assets/Fjord.png", "alt": "Fjord"},
+      {"src": "/assets/Mountain.png", "alt": "Mountain"}
+    ],
+    "category": ["residence"]
+  },
+  {
+    "id": "Project_6",
+    "title": "Biserica și mănăstirea franciscană din Vintu de Jos",
+    "description": "Ana are mere",
+    "date": "Aprilie 2023",
+    "coverImage": {"src": "/assets/Fjord.png", "alt": "Fjord"},
+    "gallery": [
+      {"src": "/assets/Sydney.png", "alt": "Sydney"},
+      {"src": "/assets/Fjord.png", "alt": "Fjord"},
+      {"src": "/assets/Mountain.png", "alt": "Mountain"}
+    ],
+    "category": ["industrial"]
   }
 ]

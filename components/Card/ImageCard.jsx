@@ -10,7 +10,7 @@ const ImageCard = ({ image }) => {
       sx={{
         height: { sm: 280, md: 320, lg: 440, xl: 440 },
         borderRadius: theme.radius.xl2,
-        boxShadow: "0px 6px 10px rgba(0,0,0,0.5)",
+        boxShadow: theme.shadow.sm,
       }}
     >
       <CardCover>
