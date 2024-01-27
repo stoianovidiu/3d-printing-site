@@ -6,7 +6,6 @@ import projects from "../../utils/projects.json";
 import theme from "../../styles/theme";
 import { SPACING } from "../../constants/spacings";
 import { ROUTES } from "../../constants/routes";
-import { useRouter } from "next/router";
 
 const itemPadding = SPACING;
 
@@ -32,8 +31,6 @@ const applyGridLayout = (list) => {
 
 const Portofoliu = () => {
   const [index, setIndex] = React.useState(0);
-  const router = useRouter();
-  console.log(router);
 
   const residenceProjects = projects.filter((project) =>
     project.category.includes("residence")

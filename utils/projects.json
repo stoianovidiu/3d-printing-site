@@ -1,6 +1,6 @@
 [
   {
-    "id": "project-1",
+    "id": "proiect-1",
     "title": "Restaurarea Castelului",
     "description": "Ana are mere",
     "date": "Aprilie 2023",
@@ -14,7 +14,7 @@
     "category": ["residence", "facade"]
   },
   {
-    "id": "project-2",
+    "id": "proiect-2",
     "title": "Biserica și mănăstirea franciscană din Vintu de Jos",
     "description": "Ana are mere",
     "date": "Aprilie 2023",
@@ -27,7 +27,7 @@
     "category": ["residence", "industrial"]
   },
   {
-    "id": "project-3",
+    "id": "proiect-3",
     "title": "Biserica și mănăstirea franciscană din Vintu de Jos",
     "description": "Ana are mere",
     "date": "Aprilie 2023",
@@ -40,7 +40,7 @@
     "category": ["industrial", "facade"]
   },
   {
-    "id": "project-4",
+    "id": "proiect-4",
     "title": "Restaurarea Castelului",
     "description": "Ana are mere",
     "date": "Aprilie 2023",
@@ -53,7 +53,7 @@
     "category": ["industrial", "facade"]
   },
   {
-    "id": "project-5",
+    "id": "proiect-5",
     "title": "Biserica și mănăstirea franciscană din Vintu de Jos",
     "description": "Ana are mere",
     "date": "Aprilie 2023",
@@ -66,7 +66,7 @@
     "category": ["residence"]
   },
   {
-    "id": "project-6",
+    "id": "proiect-6",
     "title": "Biserica și mănăstirea franciscană din Vintu de Jos",
     "description": "Ana are mere",
     "date": "Aprilie 2023",
