@@ -4,7 +4,7 @@ import ImageCard from "./ImageCard";
 import Paragraph from "../Paragraph/Paragraph";
 import Link from "../Link/Link";
 
-const MixedCard = ({ title, date, image }) => {
+const MixedCard = ({ title, date, image, href }) => {
   return (
     <Card
       variant="plain"
@@ -19,7 +19,7 @@ const MixedCard = ({ title, date, image }) => {
         <Link
           overlay
           variant="secondary"
-          href="#"
+          href={href}
           sx={{ p: 0, justifyContent: "flex-start" }}
         >
           <Paragraph>{title}</Paragraph>
