@@ -66,15 +66,12 @@ const Scanning = () => {
 
   const fileFormats = scanning.equipment.details.options.map((item) => {
     return (
-      <>
-        <Paragraph
-          key={`${item.id}-title`}
-          sx={{ pt: { sm: itemPadding.md, md: itemPadding.lg } }}
-        >
+      <React.Fragment key={item.id}>
+        <Paragraph sx={{ pt: { sm: itemPadding.md, md: itemPadding.lg } }}>
           {item.title}
         </Paragraph>
-        <Paragraph key={`${item.id}-type`}>{item.fileType}</Paragraph>
-      </>
+        <Paragraph>{item.fileType}</Paragraph>
+      </React.Fragment>
     );
   });
 
