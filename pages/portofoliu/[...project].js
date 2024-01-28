@@ -3,9 +3,9 @@ import { useRouter } from "next/router";
 import { Grid } from "@mui/joy";
 import Header from "../../components/Header/Header";
 import MainCard, { CardType, ImageType } from "../../components/Card/MainCard";
+import Paragraph from "../../components/Paragraph/Paragraph";
 import projects from "../../utils/projects.json";
 import { SPACING } from "../../constants/spacings";
-import Paragraph from "../../components/Paragraph/Paragraph";
 
 const itemPadding = SPACING;
 

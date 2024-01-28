@@ -19,7 +19,7 @@ const InfoBox = ({ itemNumber, title, description }) => {
         <Header
           level="h3"
           sx={{
-            fontSize: { sm: 56, md: 64 },
+            fontSize: 64,
             "-webkit-text-stroke": "4px",
             textStroke: "4px",
             letterSpacing: "0.05em",
