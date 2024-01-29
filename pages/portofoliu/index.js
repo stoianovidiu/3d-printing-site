@@ -29,7 +29,7 @@ const applyGridLayout = (list) => {
   );
 };
 
-const Portofoliu = () => {
+const Portfolio = () => {
   const [index, setIndex] = React.useState(0);
 
   const residenceProjects = projects.filter((project) =>
@@ -143,4 +143,4 @@ const Portofoliu = () => {
   );
 };
 
-export default Portofoliu;
+export default Portfolio;

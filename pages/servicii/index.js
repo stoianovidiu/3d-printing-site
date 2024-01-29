@@ -47,8 +47,8 @@ const applyGridLayout = (list, type) => {
   );
 };
 
-const Servicii = () => {
-  const matches = useMediaQuery(theme.breakpoints.up("lg"));
+const Services = () => {
+  const matches = useMediaQuery(theme.breakpoints.up("xl"));
   const desktopGallery = services.gallery;
   const mobileGallery = services.gallery.slice(0, 2);
 
@@ -77,4 +77,4 @@ const Servicii = () => {
   );
 };
 
-export default Servicii;
+export default Services;

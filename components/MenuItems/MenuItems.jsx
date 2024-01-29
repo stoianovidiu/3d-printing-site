@@ -1,11 +1,12 @@
 import Link from "../Link/Link";
 import { useRouter } from "next/router";
+import { ROUTES } from "../../constants/routes";
 
 const MENU_ITEMS = [
-  { label: "Scanarea 3D", path: "/scanarea-3d" },
-  { label: "Servicii", path: "/servicii" },
-  { label: "Portofoliu", path: "/portofoliu" },
-  { label: "Contact", path: "/contact" },
+  { label: "Scanarea 3D", path: ROUTES.scanning },
+  { label: "Servicii", path: ROUTES.services },
+  { label: "Portofoliu", path: ROUTES.portfolio },
+  { label: "Contact", path: ROUTES.contact },
 ];
 
 const MenuItems = () => {
