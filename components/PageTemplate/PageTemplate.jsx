@@ -26,7 +26,7 @@ const Template = (props) => {
         flexDirection="column"
         justifyContent="space-between"
         margin="0 auto"
-        height="100vh"
+        minHeight="100vh"
         maxWidth={projectTheme.breakpoints.values.xl}
       >
         <nav>
