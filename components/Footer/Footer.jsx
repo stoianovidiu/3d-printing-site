@@ -46,13 +46,7 @@ const Footer = (props) => {
         display="flex"
         flexDirection="column"
         gap={3}
-        // justifyContent="center"
       >
-        {/* <Box
-        display="flex"
-        justifyContent="space-between"
-        alignItems="center"
-      ></Box> */}
         <Grid
           display="grid"
           gridTemplateColumns={{
