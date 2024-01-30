@@ -4,7 +4,8 @@ const Button = (props) => {
   return (
     <MButton
       sx={{
-        width: { sm: "100%", md: 200 },
+        maxWidth: { sm: "100%", md: 264 },
+        ...props.sx,
       }}
       variant="solid"
       onClick={props.onClick}
