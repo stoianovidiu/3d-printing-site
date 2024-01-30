@@ -7,23 +7,26 @@ import DrawerMenu from "../DrawerMenu/DrawerMenu";
 import ThemeSwitcher from "../ThemeSwitcher/ThemeSwitcher";
 import Logo from "../Logo/Logo";
 import { Divider } from "@mui/material";
+import Footer from "../Footer/Footer";
 
 const templatePadding = SPACING;
 
 const Template = (props) => {
   const { mode } = useColorScheme();
+  const bgColor =
+    mode === "light" ? THEME_COLORS.primary : THEME_COLORS.secondary;
+  const footerBgColor =
+    mode === "light" ? THEME_COLORS.secondary : THEME_COLORS.primary;
 
   return (
-    <Box
-      bgcolor={mode === "light" ? THEME_COLORS.primary : THEME_COLORS.secondary}
-    >
+    <Box bgcolor={bgColor}>
       <Box
         px={{ sm: templatePadding.sm, md: templatePadding.md }}
         display="flex"
         flexDirection="column"
         justifyContent="space-between"
         margin="0 auto"
-        height="100vh"
+        minHeight="100vh"
         maxWidth={projectTheme.breakpoints.values.xl}
       >
         <nav>
@@ -54,8 +57,8 @@ const Template = (props) => {
         <Box flex={1} py={{ sm: templatePadding.lg, md: templatePadding.xl }}>
           {props.children}
         </Box>
-        <Box>footer</Box>
       </Box>
+      <Footer bgcolor={footerBgColor} />
     </Box>
   );
 };

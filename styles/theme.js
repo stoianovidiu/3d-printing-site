@@ -22,6 +22,8 @@ const theme = extendTheme({
           softActiveColor: THEME_COLORS.secondary,
 
           outlinedBorder: THEME_COLORS.secondary,
+
+          900: THEME_COLORS.textSecondary,
         },
         text: {
           primary: THEME_COLORS.text,
@@ -49,6 +51,8 @@ const theme = extendTheme({
           softActiveColor: THEME_COLORS.secondary,
 
           outlinedBorder: THEME_COLORS.primary,
+
+          900: THEME_COLORS.textSecondary,
         },
         text: {
           primary: THEME_COLORS.text,
