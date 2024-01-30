@@ -74,6 +74,19 @@ const theme = extendTheme({
     xl3: 40,
     xl4: 48,
   },
+  radius: {
+    xs: 2,
+    sm: 6,
+    md: 8,
+    lg: 12,
+    xl: 16,
+    xl2: 24,
+    xl3: 36,
+    xl4: 40,
+  },
+  shadow: {
+    sm: "0px 6px 10px rgba(255, 255, 255, 0.3), 0px 6px 10px rgba(0, 0, 0, 0.5)",
+  },
 });
 
 export default theme;

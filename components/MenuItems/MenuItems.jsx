@@ -1,11 +1,12 @@
 import Link from "../Link/Link";
 import { useRouter } from "next/router";
+import { ROUTES } from "../../constants/routes";
 
 const MENU_ITEMS = [
-  { label: "Scanarea 3D", path: "/scanarea-3d" },
-  { label: "Servicii", path: "/servicii" },
-  { label: "Portofoliu", path: "/portofoliu" },
-  { label: "Contact", path: "/contact" },
+  { label: "Scanarea 3D", path: ROUTES.scanning },
+  { label: "Servicii", path: ROUTES.services },
+  { label: "Portofoliu", path: ROUTES.portfolio },
+  { label: "Contact", path: ROUTES.contact },
 ];
 
 const MenuItems = () => {
@@ -19,7 +20,7 @@ const MenuItems = () => {
           href={item.path}
           fontSize="lg"
           py={2}
-          borderRadius={{ lg: 16 }}
+          borderRadius={{ lg: 0 }}
           variant={item.path === router.route ? "soft" : "solid"}
         >
           {item.label}

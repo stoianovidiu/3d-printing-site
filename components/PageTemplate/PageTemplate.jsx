@@ -9,7 +9,7 @@ import Logo from "../Logo/Logo";
 import { Divider } from "@mui/material";
 import Footer from "../Footer/Footer";
 
-const templatePadding = SPACING.PAGE_TEMPLATE_PADDING;
+const templatePadding = SPACING;
 
 const Template = (props) => {
   const { mode } = useColorScheme();
@@ -34,7 +34,7 @@ const Template = (props) => {
             display="flex"
             justifyContent="space-between"
             alignItems="center"
-            py={{ sm: 2, lg: 0.25 }}
+            py={{ sm: 2, lg: 0 }}
           >
             <Box display="flex" alignItems="center" gap={4}>
               <Logo />
@@ -49,10 +49,12 @@ const Template = (props) => {
             sx={{
               // mb: 2,
               "--Divider-thickness": "2px",
+              boxShadow: "0 0 0 100vmax var(--joy-palette-divider)",
+              clipPath: "inset(0px -100vmax)",
             }}
           />
         </nav>
-        <Box flex={1} py={templatePadding.md}>
+        <Box flex={1} py={{ sm: templatePadding.lg, md: templatePadding.xl }}>
           {props.children}
         </Box>
       </Box>
