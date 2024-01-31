@@ -1,11 +1,11 @@
 import { useColorScheme, Switch } from "@mui/joy";
 import { DarkMode } from "@mui/icons-material";
 import { THEME_COLORS } from "../../constants/colors";
+import { getThemeMainColor, getThemeOppositeColor } from "../../utils/utils";
 
 const ThemeSwitcher = (props) => {
   const { mode, setMode } = useColorScheme();
-  const reverseThemeColor =
-    mode === "light" ? THEME_COLORS.secondary : THEME_COLORS.primary;
+  const reverseThemeColor = getThemeOppositeColor(mode);
 
   const toggleMode = () => {
     setMode(mode === "light" ? "dark" : "light");
@@ -23,10 +23,7 @@ const ThemeSwitcher = (props) => {
             <DarkMode
               sx={{
                 color: reverseThemeColor,
-                backgroundColor:
-                  mode === "light"
-                    ? THEME_COLORS.primary
-                    : THEME_COLORS.secondary,
+                backgroundColor: getThemeMainColor(mode),
                 borderRadius: 16,
               }}
             />

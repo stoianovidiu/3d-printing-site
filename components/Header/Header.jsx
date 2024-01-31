@@ -1,5 +1,5 @@
 import { Typography, useColorScheme } from "@mui/joy";
-import { THEME_COLORS } from "../../constants/colors";
+import { getThemeOppositeColor } from "../../utils/utils";
 
 const HEADER_SIZE = {
   h1: { sm: "xl3", md: "xl4" },
@@ -9,8 +9,7 @@ const HEADER_SIZE = {
 
 const Header = (props) => {
   const { mode } = useColorScheme();
-  const textColor =
-    mode === "light" ? THEME_COLORS.secondary : THEME_COLORS.primary;
+  const textColor = getThemeOppositeColor(mode);
 
   return (
     <Typography

@@ -2,21 +2,19 @@ import { Box, useColorScheme } from "@mui/joy";
 import MenuItems from "../MenuItems/MenuItems";
 import { SPACING } from "../../constants/spacings";
 import projectTheme from "../../styles/theme";
-import { THEME_COLORS } from "../../constants/colors";
 import DrawerMenu from "../DrawerMenu/DrawerMenu";
 import ThemeSwitcher from "../ThemeSwitcher/ThemeSwitcher";
 import Logo from "../Logo/Logo";
 import { Divider } from "@mui/material";
 import Footer from "../Footer/Footer";
+import { getThemeMainColor, getThemeOppositeColor } from "../../utils/utils";
 
 const templatePadding = SPACING;
 
 const Template = (props) => {
   const { mode } = useColorScheme();
-  const bgColor =
-    mode === "light" ? THEME_COLORS.primary : THEME_COLORS.secondary;
-  const footerBgColor =
-    mode === "light" ? THEME_COLORS.secondary : THEME_COLORS.primary;
+  const bgColor = getThemeMainColor(mode);
+  const footerBgColor = getThemeOppositeColor(mode);
 
   return (
     <Box bgcolor={bgColor}>
@@ -47,7 +45,6 @@ const Template = (props) => {
           </Box>
           <Divider
             sx={{
-              // mb: 2,
               "--Divider-thickness": "2px",
               boxShadow: "0 0 0 100vmax var(--joy-palette-divider)",
               clipPath: "inset(0px -100vmax)",
