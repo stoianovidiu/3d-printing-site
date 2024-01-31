@@ -2,7 +2,6 @@ import * as React from "react";
 import { Box, Stack } from "@mui/joy";
 import Paragraph from "../Paragraph/Paragraph";
 import Header from "../Header/Header";
-import theme from "../../styles/theme";
 import { SPACING } from "../../constants/spacings";
 
 const itemPadding = SPACING;
@@ -29,7 +28,7 @@ const InfoBox = ({ itemNumber, title, description }) => {
         </Header>
         <Paragraph
           fontSize={{ sm: "md", md: "lg" }}
-          textColor={theme.palette.text.secondary}
+          hasThemeOppositeColor
           sx={{ fontWeight: 700 }}
         >
           {title}

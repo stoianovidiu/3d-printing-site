@@ -1,6 +1,5 @@
 import { Box, Divider, Grid, Typography, useColorScheme } from "@mui/joy";
 import Header from "../Header/Header";
-import { THEME_COLORS } from "../../constants/colors";
 import Button from "../Button/Button";
 import projectTheme from "../../styles/theme";
 import Paragraph from "../Paragraph/Paragraph";
@@ -12,6 +11,7 @@ import {
   Phone,
   Twitter,
 } from "@mui/icons-material";
+import { getThemeMainColor } from "../../utils/utils";
 
 const contactDetails = [
   {
@@ -34,8 +34,7 @@ const FooterHeader = (props) => {
 
 const Footer = (props) => {
   const { mode } = useColorScheme();
-  const color =
-    mode === "light" ? THEME_COLORS.primary : THEME_COLORS.secondary;
+  const color = getThemeMainColor(mode);
 
   return (
     <Box {...props}>

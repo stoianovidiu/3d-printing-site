@@ -42,7 +42,7 @@ const TextCard = ({ itemNumber, title, subtitle, fileType }) => {
           <ListItem>
             <Paragraph
               fontSize="lg"
-              textColor={theme.palette.text.secondary}
+              hasThemeOppositeColor
               sx={{ fontWeight: 700 }}
             >
               {title}
