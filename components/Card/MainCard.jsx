@@ -11,6 +11,7 @@ export const CardType = Object.freeze({
 });
 
 export const ImageType = Object.freeze({
+  HomePage: Symbol("homePage"),
   LargeGrid: Symbol("largeGrid"),
   SmallGrid: Symbol("smallGrid"),
 });
