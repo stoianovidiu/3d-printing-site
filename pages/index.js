@@ -1,4 +1,5 @@
 import * as React from "react";
+import { useRouter } from "next/router";
 import { Box, Grid } from "@mui/joy";
 import { useMediaQuery } from "@mui/material";
 import Header from "../components/Header/Header";
@@ -38,12 +39,92 @@ const applyGridLayout = (list) => {
 };
 
 const Home = () => {
+  const router = useRouter();
   const matches = useMediaQuery(theme.breakpoints.up("xl"));
   const desktopProjects = projects.slice(0, 3);
   const mobileProjects = projects.slice(0, 4);
 
+  const introRef = React.useRef(null);
+  const logoRef = React.useRef(null);
+
+  const sameApp = Object.values(ROUTES).some((element) => {
+    return Object.keys(router.components).includes(element);
+  });
+  console.log(sameApp, Object.keys(router.components), router.components);
+
+  React.useEffect(() => {
+    if (!sameApp) {
+      if (logoRef.current) {
+        setTimeout(() => {
+          logoRef.current.style.bottom = 0;
+          logoRef.current.style.opacity = 1;
+          logoRef.current.style.transition = "ease-in-out 0.5s";
+        }, 400);
+
+        setTimeout(() => {
+          setTimeout(() => {
+            logoRef.current.style.bottom = "150px";
+            logoRef.current.style.opacity = 0;
+            logoRef.current.style.transition = "ease-in-out 0.5s";
+          }, 50);
+        }, 1500);
+      }
+
+      if (introRef.current) {
+        setTimeout(() => {
+          introRef.current.style.top = "-100vh";
+        }, 1800);
+      }
+    }
+  }, []);
+
   return (
     <>
+      {!sameApp && (
+        <Box
+          sx={{
+            position: "fixed",
+            zIndex: 2,
+            left: 0,
+            top: 0,
+            width: "100%",
+            height: "100vh",
+            bgcolor: theme.palette.primary.softBg,
+            transition: "1s",
+          }}
+          ref={introRef}
+        >
+          <Box
+            sx={{
+              position: "absolute",
+              top: "40%",
+              left: "50%",
+              transform: "translate(-50%, -50%)",
+            }}
+          >
+            <Box
+              sx={{
+                position: "relative",
+                display: "inline-block",
+                bottom: "-20px",
+                opacity: 0,
+              }}
+              ref={logoRef}
+            >
+              <Header
+                level="h4"
+                sx={{
+                  letterSpacing: "0.05em",
+                  color: theme.palette.text.tertiary,
+                }}
+              >
+                Logo
+              </Header>
+            </Box>
+          </Box>
+        </Box>
+      )}
+
       <Box
         display="grid"
         gridTemplateColumns={"repeat(2, 1fr)"}
