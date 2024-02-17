@@ -2,7 +2,7 @@ import * as React from "react";
 import { useRouter } from "next/router";
 import { Box, Grid } from "@mui/joy";
 import { useMediaQuery } from "@mui/material";
-import Header from "../components/Header/Header";
+import Header, { H2 } from "../components/Header/Header";
 import Link from "../components/Link/Link";
 import MainCard, { CardType, ImageType } from "../components/Card/MainCard";
 import Paragraph from "../components/Paragraph/Paragraph";
@@ -50,7 +50,6 @@ const Home = () => {
   const sameApp = Object.values(ROUTES).some((element) => {
     return Object.keys(router.components).includes(element);
   });
-  console.log(sameApp, Object.keys(router.components), router.components);
 
   React.useEffect(() => {
     if (!sameApp) {
@@ -158,18 +157,7 @@ const Home = () => {
         </Box>
       </Box>
 
-      <Header
-        level="h2"
-        sx={{
-          fontSize: {
-            sm: "var(--joy-fontSize-xl3)",
-            md: "var(--joy-fontSize-xl4)",
-          },
-          pt: { sm: itemPadding.xl2, md: itemPadding.xl3 },
-        }}
-      >
-        Ce este scanarea 3D
-      </Header>
+      <H2 title={"Ce este scanarea 3D"} />
       <Paragraph
         sx={{
           columnCount: { lg: itemPadding.sm },
@@ -195,35 +183,13 @@ const Home = () => {
 
       <Grid container spacing={3}>
         <Grid sm={12} md={6}>
-          <Header
-            level="h2"
-            sx={{
-              fontSize: {
-                sm: "var(--joy-fontSize-xl3)",
-                md: "var(--joy-fontSize-xl4)",
-              },
-              pt: { sm: itemPadding.xl2, md: itemPadding.xl3 },
-            }}
-          >
-            Servicii
-          </Header>
+          <H2 title={"Servicii"} />
           <Paragraph sx={{ pt: { sm: itemPadding.lg, md: itemPadding.xl } }}>
             {home.services.description}
           </Paragraph>
         </Grid>
         <Grid sm={12} md={6}>
-          <Header
-            level="h2"
-            sx={{
-              fontSize: {
-                sm: "var(--joy-fontSize-xl3)",
-                md: "var(--joy-fontSize-xl4)",
-              },
-              pt: { sm: itemPadding.xl2, md: itemPadding.xl3 },
-            }}
-          >
-            Pachete
-          </Header>
+          <H2 title={"Pachete"} />
           <Paragraph sx={{ pt: { sm: itemPadding.lg, md: itemPadding.xl } }}>
             {home.pricing.description}
           </Paragraph>
@@ -245,18 +211,7 @@ const Home = () => {
         </Grid>
       </Grid>
 
-      <Header
-        level="h2"
-        sx={{
-          fontSize: {
-            sm: "var(--joy-fontSize-xl3)",
-            md: "var(--joy-fontSize-xl4)",
-          },
-          pt: { sm: itemPadding.xl2, md: itemPadding.xl3 },
-        }}
-      >
-        Proiecte
-      </Header>
+      <H2 title={"Proiecte"} />
       {applyGridLayout(matches ? desktopProjects : mobileProjects)}
       <Link
         variant="soft"
