@@ -28,9 +28,9 @@
   ],
 
   "gallery": [
-    {"id": "01", "src": "/assets/Sydney.png", "alt": "Sydney"},
-    {"id": "02", "src": "/assets/Fjord.png", "alt": "Fjord"},
-    {"id": "03", "src": "/assets/Mountain.png", "alt": "Mountain"}
+    { "id": "01", "src": "./assets/Sydney.png", "alt": "Sydney" },
+    { "id": "02", "src": "./assets/Fjord.png", "alt": "Fjord" },
+    { "id": "03", "src": "./assets/Mountain.png", "alt": "Mountain" }
   ],
 
   "pricing": [
