@@ -51,7 +51,11 @@ const Template = (props) => {
             }}
           />
         </nav>
-        <Box flex={1} py={{ sm: templatePadding.lg, md: templatePadding.xl }}>
+        <Box
+          flex={1}
+          pt={{ sm: templatePadding.lg, md: templatePadding.xl }}
+          pb={{ sm: templatePadding.xl2, md: templatePadding.xl3 }}
+        >
           {props.children}
         </Box>
       </Box>
