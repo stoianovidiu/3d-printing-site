@@ -17,8 +17,12 @@ const Paragraph = (props) => {
     <Typography
       textColor={customTextColor ? customTextColor : "text.primary"}
       {...props}
+      style={{ whiteSpace: "pre-line", textAlign: "justify" }}
     >
-      {props.children}
+      <div
+        dangerouslySetInnerHTML={{ __html: props.children }}
+        style={{ ul: { listStyleType: "disc", paddingLeft: "16px" } }}
+      />
     </Typography>
   );
 };

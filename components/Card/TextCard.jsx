@@ -12,7 +12,7 @@ const TextCard = ({ itemNumber, title, subtitle, fileType }) => {
     <Card
       variant="outlined"
       sx={{
-        height: { sm: 280, md: 320, lg: 440, xl: 440 },
+        minHeight: { sm: 520, md: 680, lg: 560, xl: 580 },
         borderRadius: theme.radius.xl2,
         boxShadow: theme.shadow.sm,
         justifyContent: "center",
@@ -49,7 +49,11 @@ const TextCard = ({ itemNumber, title, subtitle, fileType }) => {
             </Paragraph>
           </ListItem>
           <ListItem>
-            <Paragraph fontSize="sm">{subtitle}</Paragraph>
+            <Paragraph fontSize="sm">
+              {`<ul style="list-style-type: disc; padding-left: 16px">
+                ${subtitle}
+              </ul>`}
+            </Paragraph>
           </ListItem>
           <ListItem sx={{ mt: itemPadding.sm }}>
             <Paragraph fontSize="sm">format</Paragraph>

@@ -1,29 +1,29 @@
 {
   "laserScanning":{
     "image": {"src": "/assets/Fjord.png", "alt": "Fjord"},
-    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+    "description": "Serviciile de scanare 3D sunt utilizate într-o varietate de industrii pentru a captura forme și suprafețe tridimensionale cu un grad înalt de precizie. Aceste servicii sunt esențiale în inginerie inversă, controlul calității, designul de produs, arhitectură, patrimoniu cultural și multe altele."
   },
   
   "equipment":{
     "image": {"src": "/assets/Sydney.png", "alt": "Sydney"},
-    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "LEICA BLK 360 \n\nscanner 3D cu sistem de imagistică sferică HDR de mare viteză integrat și Sistem Inerțial Vizual (VIS) pentru pre-înregistrare în timp real",
     "details": {
       "title": "Formate generate",
       "options": [
         {
           "id": "format-1",
-          "title": "Nori de puncte",
-          "fileType": ".e57, .las, .laz, .ply, .ptc"
+          "title": "Formate generate: \nNori de puncte",
+          "fileType": ".e57, .xyz"
         },
         {
           "id": "format-2",
-          "title": "Desen tehnic 2D",
-          "fileType": ".pln (ArchiCAD 22-23), .pla (ArchiCAD 22-23), .pdf, .dwg"
+          "title": "Formate generate în urma procesării: \nDesen tehnic 2D",
+          "fileType": ".pdf, .dwg"
         },
         {
           "id": "format-3",
           "title": "Model 3D CAD",
-          "fileType": ".pln (ArchiCAD 22-23), .pla (ArchiCAD 22-23), .dwg, .ifc, .dxf"
+          "fileType": ".ifc"
         }
       ]
     }
@@ -33,17 +33,42 @@
     {
       "id": "stage-1",
       "image": {"src": "/assets/Fjord.png", "alt": "Fjord"},
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+      "description": "Ne asigurăm că scanerul 3D este pregătit și calibrat corect. În funcție de locație este posibil să fie necesară o iluminare adecvată sau alte condiții specifice pentru a obține cele mai bune rezultate. De asemenea, ne asigurăm că obiectul sau scena care urmează să fie scanată este pregătită și stabilă."
     },
     {
       "id": "stage-2",
       "image": {"src": "/assets/Mountain.png", "alt": "Mountain"},
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+      "description": "Vom pregăti datele de intrare, cum ar fi setările scanerului sau informațiile despre obiect sau scenă. Acest lucru poate include stabilirea parametrilor de scanare, cum ar fi rezoluția și densitatea punctelor."
     },
     {
       "id": "stage-3",
       "image": {"src": "/assets/Sydney.png", "alt": "Sydney"},
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+      "description": "Se efectuează scanarea propriu-zisă folosind scanerul 3D. Acest lucru poate implica mișcarea manuală a scanerului în jurul obiectului sau utilizarea unui sistem automatizat pentru a acoperi întreaga suprafață."
+    },
+    {
+      "id": "stage-4",
+      "image": {"src": "/assets/Sydney.png", "alt": "Sydney"},
+      "description": "În timpul scanării, datele despre suprafața obiectului sau scenei sunt colectate în mod continuu de către scaner. Aceste date pot consta în coordonate 3D ale punctelor de pe suprafața obiectului, culori sau texturi asociate și alte informații relevante."
+    },
+    {
+      "id": "stage-5",
+      "image": {"src": "/assets/Sydney.png", "alt": "Sydney"},
+      "description": "După finalizarea scanării, datele colectate sunt adesea procesate pentru a îmbunătăți calitatea și pentru a crea un model 3D complet. Această post-procesare poate implica eliminarea zgomotului din datele brute, alinierea și combinarea diferitelor seturi de date și crearea unei reprezentări digitale complete a obiectului sau scenei."
+    },
+    {
+      "id": "stage-6",
+      "image": {"src": "/assets/Sydney.png", "alt": "Sydney"},
+      "description": "Pe baza datelor prelucrate, un model 3D este creat. Acest model poate fi reprezentat sub forma unui nor de puncte tridimensionale sau sub forma unei suprafețe solide. În unele cazuri, este posibil să fie necesară și texturizarea modelului cu informații despre culoare și texturi."
+    },
+    {
+      "id": "stage-7",
+      "image": {"src": "/assets/Sydney.png", "alt": "Sydney"},
+      "description": "Se va verifica și edita modelul 3D creat, dacă este necesar. Acest lucru poate include corectarea erorilor sau imperfecțiunilor și adăugarea detaliilor suplimentare."
+    },
+    {
+      "id": "stage-8",
+      "image": {"src": "/assets/Sydney.png", "alt": "Sydney"},
+      "description": "Odată ce modelul 3D este finalizat, acesta poate fi exportat în diferite formate de fișiere pentru utilizare ulterioară în diverse aplicații, cum ar fi proiectare, simulare, imprimare 3D sau vizualizare interactivă."
     }
   ]
 }
