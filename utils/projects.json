@@ -4,12 +4,12 @@
     "title": "Restaurarea Castelului",
     "description": "Ana are mere",
     "date": "Aprilie 2023",
-    "coverImage": {"src": "/assets/Sydney.png", "alt": "Sydney"},
+    "coverImage": { "src": "./assets/Sydney.png", "alt": "Sydney" },
     "gallery": [
-      {"id": "01", "src": "/assets/Sydney.png", "alt": "Sydney"},
-      {"id": "02", "src": "/assets/Fjord.png", "alt": "Fjord"},
-      {"id": "03", "src": "/assets/Mountain.png", "alt": "Mountain"},
-      {"id": "04", "src": "/assets/Fjord.png", "alt": "Fjord"}
+      { "id": "01", "src": "./assets/Sydney.png", "alt": "Sydney" },
+      { "id": "02", "src": "./assets/Fjord.png", "alt": "Fjord" },
+      { "id": "03", "src": "./assets/Mountain.png", "alt": "Mountain" },
+      { "id": "04", "src": "./assets/Fjord.png", "alt": "Fjord" }
     ],
     "category": ["residence", "facade"]
   },
@@ -18,11 +18,11 @@
     "title": "Biserica și mănăstirea franciscană din Vintu de Jos",
     "description": "Ana are mere",
     "date": "Aprilie 2023",
-    "coverImage": {"src": "/assets/Mountain.png", "alt": "Mountain"},
+    "coverImage": { "src": "./assets/Mountain.png", "alt": "Mountain" },
     "gallery": [
-      {"id": "01", "src": "/assets/Sydney.png", "alt": "Sydney"},
-      {"id": "02", "src": "/assets/Fjord.png", "alt": "Fjord"},
-      {"id": "03", "src": "/assets/Mountain.png", "alt": "Mountain"}
+      { "id": "01", "src": "./assets/Sydney.png", "alt": "Sydney" },
+      { "id": "02", "src": "./assets/Fjord.png", "alt": "Fjord" },
+      { "id": "03", "src": "./assets/Mountain.png", "alt": "Mountain" }
     ],
     "category": ["residence", "industrial"]
   },
@@ -31,11 +31,11 @@
     "title": "Biserica și mănăstirea franciscană din Vintu de Jos",
     "description": "Ana are mere",
     "date": "Aprilie 2023",
-    "coverImage": {"src": "/assets/Fjord.png", "alt": "Fjord"},
+    "coverImage": { "src": "./assets/Fjord.png", "alt": "Fjord" },
     "gallery": [
-      {"id": "01", "src": "/assets/Sydney.png", "alt": "Sydney"},
-      {"id": "02", "src": "/assets/Fjord.png", "alt": "Fjord"},
-      {"id": "03", "src": "/assets/Mountain.png", "alt": "Mountain"}
+      { "id": "01", "src": "./assets/Sydney.png", "alt": "Sydney" },
+      { "id": "02", "src": "./assets/Fjord.png", "alt": "Fjord" },
+      { "id": "03", "src": "./assets/Mountain.png", "alt": "Mountain" }
     ],
     "category": ["industrial", "facade"]
   },
@@ -44,11 +44,11 @@
     "title": "Restaurarea Castelului",
     "description": "Ana are mere",
     "date": "Aprilie 2023",
-    "coverImage": {"src": "/assets/Sydney.png", "alt": "Sydney"},
+    "coverImage": { "src": "./assets/Sydney.png", "alt": "Sydney" },
     "gallery": [
-      {"id": "01", "src": "/assets/Sydney.png", "alt": "Sydney"},
-      {"id": "02", "src": "/assets/Fjord.png", "alt": "Fjord"},
-      {"id": "03", "src": "/assets/Mountain.png", "alt": "Mountain"}
+      { "id": "01", "src": "./assets/Sydney.png", "alt": "Sydney" },
+      { "id": "02", "src": "./assets/Fjord.png", "alt": "Fjord" },
+      { "id": "03", "src": "./assets/Mountain.png", "alt": "Mountain" }
     ],
     "category": ["industrial", "facade"]
   },
@@ -57,11 +57,11 @@
     "title": "Biserica și mănăstirea franciscană din Vintu de Jos",
     "description": "Ana are mere",
     "date": "Aprilie 2023",
-    "coverImage": {"src": "/assets/Mountain.png", "alt": "Mountain"},
+    "coverImage": { "src": "./assets/Mountain.png", "alt": "Mountain" },
     "gallery": [
-      {"id": "01", "src": "/assets/Sydney.png", "alt": "Sydney"},
-      {"id": "02", "src": "/assets/Fjord.png", "alt": "Fjord"},
-      {"id": "03", "src": "/assets/Mountain.png", "alt": "Mountain"}
+      { "id": "01", "src": "./assets/Sydney.png", "alt": "Sydney" },
+      { "id": "02", "src": "./assets/Fjord.png", "alt": "Fjord" },
+      { "id": "03", "src": "./assets/Mountain.png", "alt": "Mountain" }
     ],
     "category": ["residence"]
   },
@@ -70,11 +70,11 @@
     "title": "Biserica și mănăstirea franciscană din Vintu de Jos",
     "description": "Ana are mere",
     "date": "Aprilie 2023",
-    "coverImage": {"src": "/assets/Fjord.png", "alt": "Fjord"},
+    "coverImage": { "src": "./assets/Fjord.png", "alt": "Fjord" },
     "gallery": [
-      {"id": "01", "src": "/assets/Sydney.png", "alt": "Sydney"},
-      {"id": "02", "src": "/assets/Fjord.png", "alt": "Fjord"},
-      {"id": "03", "src": "/assets/Mountain.png", "alt": "Mountain"}
+      { "id": "01", "src": "./assets/Sydney.png", "alt": "Sydney" },
+      { "id": "02", "src": "./assets/Fjord.png", "alt": "Fjord" },
+      { "id": "03", "src": "./assets/Mountain.png", "alt": "Mountain" }
     ],
     "category": ["industrial"]
   }
