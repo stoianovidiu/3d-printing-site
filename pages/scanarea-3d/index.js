@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Box, Grid } from "@mui/joy";
 import { useMediaQuery } from "@mui/material";
-import Header from "../../components/Header/Header";
+import Header, { H2 } from "../../components/Header/Header";
 import MainCard, { CardType } from "../../components/Card/MainCard";
 import Paragraph from "../../components/Paragraph/Paragraph";
 import scanning from "../../utils/scanning.json";
@@ -15,18 +15,11 @@ const applyGridLayout = (list, matches) => {
     <Box
       key={stage.id}
       display="grid"
-      gridTemplateColumns={matches ? "repeat(2, 1fr)" : "1fr"}
+      gridTemplateColumns={matches ? "repeat(4, 1fr)" : "1fr"}
       gridTemplateRows={matches ? "1fr" : "auto 1fr"}
       gap={3}
       sx={{ pt: { sm: itemPadding.lg, md: itemPadding.xl2 } }}
     >
-      <Box gridRow={1} gridColumn={1}>
-        <MainCard
-          cardType={CardType.Image}
-          cardAnimation={false}
-          image={stage.image}
-        />
-      </Box>
       <Box
         gridRow={1}
         gridColumn={1}
@@ -40,10 +33,6 @@ const applyGridLayout = (list, matches) => {
             letterSpacing: "0.05em",
             "-webkit-text-stroke": "4px",
             textStroke: "4px",
-            background: {
-              sm: "linear-gradient(0deg, #FFF 0%, rgba(255, 255, 255, 0.30) 100%, rgba(255, 255, 255, 0.00) 100%);",
-              md: "linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.30) 100%, rgba(255, 255, 255, 0.00) 100%);",
-            },
             borderRadius: theme.radius.xl2,
             textAlign: { sm: "left", md: "right" },
             px: itemPadding.md,
@@ -52,7 +41,7 @@ const applyGridLayout = (list, matches) => {
           {index + 1}
         </Header>
       </Box>
-      <Box gridRow={{ sm: 2, md: 1 }} gridColumn={{ sm: 1, md: 2 }}>
+      <Box gridRow={{ sm: 2, md: 1 }} gridColumn={{ sm: 1, md: "span 3" }}>
         <Paragraph>{stage.description}</Paragraph>
       </Box>
     </Box>
@@ -95,18 +84,7 @@ const Scanning = () => {
         </Grid>
       </Grid>
 
-      <Header
-        level="h2"
-        sx={{
-          fontSize: {
-            sm: "var(--joy-fontSize-xl3)",
-            md: "var(--joy-fontSize-xl4)",
-          },
-          pt: { sm: itemPadding.xl2, md: itemPadding.xl3 },
-        }}
-      >
-        Echipament
-      </Header>
+      <H2 title={"Echipament"} />
       <Grid
         container
         spacing={3}
@@ -125,18 +103,7 @@ const Scanning = () => {
         </Grid>
       </Grid>
 
-      <Header
-        level="h2"
-        sx={{
-          fontSize: {
-            sm: "var(--joy-fontSize-xl3)",
-            md: "var(--joy-fontSize-xl4)",
-          },
-          pt: { sm: itemPadding.xl2, md: itemPadding.xl3 },
-        }}
-      >
-        Etape scanare 3D
-      </Header>
+      <H2 title={"Etape scanare 3D"} />
       {applyGridLayout(scanning.scanningStages, matches)}
     </>
   );

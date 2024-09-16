@@ -36,33 +36,39 @@
   "pricing": [
     {
       "id": "price-1",
-      "title": "Scanare + Releveu 2D",
-      "subtitle": "pentru intabulari",
-      "fileType": ".DWG"
+      "title": "Pachet de scanare de bază",
+      "subtitle": "<li>Scanare 3D: Capturarea datelor 3D ale obiectelor sau mediilor selectate.</li><li>Procesare de bază a datelor: Curățarea și filtrarea norului de puncte.</li><li>Livrare date: Furnizarea norului de puncte brut.</li>",
+      "fileType": ".e57"
     },
     {
       "id": "price-2",
-      "title": "Scanare + Releveu 3D",
-      "subtitle": "pentru intabulari",
-      "fileType": ".IFC"
+      "title": "Pachet de scanare mediu",
+      "subtitle": "<li>Scanare 3D: Capturarea datelor 3D ale obiectelor sau mediilor selectate.</li><li>Procesare de bază a datelor: Curățarea și filtrarea norului de puncte.</li><li>Livrare date: Furnizarea norului de puncte brut.</li><li>Procesare 2D</li>",
+      "fileType": ".e57, .DWG"
     },
     {
       "id": "price-3",
-      "title": "Scanare + Releveu 2D",
-      "subtitle": "planuri",
-      "fileType": ".DWG"
+      "title": "Pachet de scanare avansat",
+      "subtitle": "<li>Scanare 3D: Capturarea datelor 3D ale obiectelor sau mediilor selectate.</li><li>Procesare de bază a datelor: Curățarea și filtrarea norului de puncte.</li><li>Livrare date: Furnizarea norului de puncte brut. </li><li>Procesare 2D&3D</li>",
+      "fileType": ".e57, .DWG, .IFC"
     },
     {
       "id": "price-4",
-      "title": "Scanare + Releveu 2D",
-      "subtitle": "fatade",
-      "fileType": ".DWG"
+      "title": "Pachet de scanare pentru patrimoniu cultural",
+      "subtitle": "<li>Scanare 3D: Scanarea artefactelor, clădirilor sau siturilor istorice.</li><li>Modelare detaliată: Crearea de modele 3D detaliate și texturate.</li><li>Documentare și arhivare: Furnizarea de fișiere digitale pentru conservare pe termen lung.</li><li>Vizualizări interactive: Crearea de tururi virtuale și vizualizări interactive pentru muzee și expoziții online.</li>",
+      "fileType": ".e57, .DWG, .IFC"
     },
     {
       "id": "price-5",
-      "title": "Scanare + Releveu 3D",
-      "subtitle": "planuri, sectiuni & fatade",
-      "fileType": ".DWG + .IFC"
+      "title": "Pachet de scanare pentru arhitectură și construcții",
+      "subtitle": "<li>Scanare 3D: Capturarea detaliilor clădirilor și infrastructurilor.</li><li>Integrare BIM: Convertirea datelor scanate în modele BIM pentru utilizare în proiectare și managementul construcțiilor.</li><li>Analiză și planificare: Furnizarea de date precise pentru evaluarea proiectelor de renovare și extindere.</li><li>Vizualizări 3D: Crearea de vizualizări 3D realiste pentru prezentări și marketing.</li>",
+      "fileType": ".e57, .DWG, .IFC"
+    },
+    {
+      "id": "price-6",
+      "title": "Pachet de scanare personalizat",
+      "subtitle": "<li>Consultanță: Evaluarea nevoilor specifice ale clientului și propunerea unei soluții personalizate. </li><li>Scanare 3D: Utilizarea tehnicilor și echipamentelor adecvate pentru proiectul specific.</li><li>Procesare și analiză: Adaptarea procesării datelor și analizei în funcție de cerințele proiectului.</li><li>Asistență și suport: Suport tehnic și asistență pe parcursul întregului proiect.</li>",
+      "fileType": ".e57, .DWG, .IFC"
     }
   ]
 }

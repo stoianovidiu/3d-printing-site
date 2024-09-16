@@ -1,0 +1,14 @@
+{
+  "laserScanning": {
+    "image": { "src": "/assets/Sydney.png", "alt": "Sydney" },
+    "description": "În contextul arhitecturii, scanarea 3D ca serviciu se referă la utilizarea tehnologiilor de scanare tridimensională pentru a captura informații detaliate despre clădiri, structuri sau terenuri într-un format digital tridimensional. \n\n<strong>Documentarea și modelarea clădirilor existente:</strong> \nScanarea 3D poate fi utilizată pentru a crea modele detaliate ale clădirilor existente, inclusiv a aspectelor interioare și exterioare. Aceste modele pot fi folosite pentru renovări, extinderi sau pentru a crea vizualizări realiste ale proiectelor de arhitectură. \n\n<strong>Analiza și evaluarea structurală:</strong> \nPrin scanarea 3D a clădirilor sau structurilor, arhitecții pot obține informații precise despre starea lor structurală. Acest lucru poate include detectarea fisurilor, deformărilor sau altor probleme care pot necesita intervenție. \n\n<strong>Integrarea în fluxurile de lucru BIM (Building Information Modeling):</strong> \nDatele obținute din scanarea 3D pot fi integrate în modelele BIM pentru a oferi informații mai detaliate și precise despre clădiri sau proiecte de construcții. Aceste modele pot fi apoi folosite pentru a gestiona proiectele, pentru planificare și pentru a coordona eforturile între diferitele echipe implicate. \n\n<strong>Vizualizare și prezentare:</strong> \nModelele 3D create prin scanare pot fi folosite pentru a crea vizualizări realiste ale proiectelor arhitecturale. Acest lucru poate ajuta clienții și alte părți interesate să-și imagineze mai bine cum va arăta proiectul final."
+  },
+
+  "services": {
+    "description": "Serviciile de scanare 3D sunt utilizate într-o varietate de industrii pentru a captura forme și suprafețe tridimensionale cu un grad înalt de precizie. Aceste servicii sunt esențiale în inginerie inversă, controlul calității, designul de produs, arhitectură, patrimoniu cultural și multe altele."
+  },
+
+  "pricing": {
+    "description": "Pachetele de servicii pentru scanare 3D pot varia semnificativ în funcție de nevoile specifice ale clientului și de domeniul de aplicare."
+  }
+}

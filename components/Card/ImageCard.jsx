@@ -6,7 +6,9 @@ import theme from "../../styles/theme";
 
 const ImageCard = ({ image, imageType }) => {
   const cardHeight =
-    imageType === ImageType.LargeGrid
+    imageType === ImageType.HomePage
+      ? { sm: 320, md: 540, lg: 660, xl: 660 }
+      : ImageType.LargeGrid
       ? { sm: 280, md: 320, lg: 440, xl: 440 }
       : { sm: 240, md: 200, lg: 240, xl: 320 };
 
